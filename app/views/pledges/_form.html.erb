@@ -1,0 +1,46 @@
+<%= form_for(pledge) do |f| %>
+
+  <% if pledge.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pledge.errors.count, "error") %> prohibited this pledge from being saved:</h2>
+
+      <ul>
+      <% pledge.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <br><br>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, class: 'inputfield', autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description, class: 'inputfield' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :category %><br />
+    <%= f.collection_select(:category_id, Category.all, :id, :name, prompt: true) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount, class: 'inputfield' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sponsor %><br />
+    <%= f.collection_select(:user_id, User.all, :id, :username, prompt: true) %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+

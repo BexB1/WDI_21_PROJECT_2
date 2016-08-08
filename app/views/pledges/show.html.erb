@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+
+<ul>
+  <li>Name : <%= @pledge.name %></li>
+  <li>Description : <%= @pledge.description %></li>
+  <li>Amount Pledged: <%= @pledge.amount %></li>
+  <li>Pledge Sponsor : <%= @pledge.sponsor %></li>
+</ul>
+
+<%= link_to "Back", pledges_path %>

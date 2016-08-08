@@ -1,2 +1,45 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ThirtyWins</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,700" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+  <nav>
+    <ul>
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Pledges", pledges_path %></li>
+    <% if current_user %>
+      <li><%= current_user.email %></li>
+      <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
+      <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+    <% else %>
+      <li><%= link_to "Sign In", new_user_session_path %></li>
+      <li><%= link_to "Register",  new_user_registration_path %></li>
+    </ul>
+    <% end %>
+  </nav>
+  
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+  <div class="top-image"></div>
+  <div class="shader">
+    
+    <div class="bottomshader"></div>
+  </div>
+
+      <div class="centered">
+        <h2>Welcome to</h2><br />
+        <h1>ThirtyWins</h1>
+      </div>
+
+  </body>
+</html>
