@@ -18,7 +18,7 @@
 # end
 
 every '0 0 * * *' do
-  runner "Pledge.has_posted?"
+  runner "Pledge.is_failed?"
 end
 
 # Learn more: http://github.com/javan/whenever

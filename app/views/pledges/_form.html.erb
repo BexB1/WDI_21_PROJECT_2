@@ -35,8 +35,8 @@
   </div>
 
   <div class="field">
-    <%= f.label :sponsor %><br />
-    <%= f.collection_select(:user_id, User.all, :id, :username, prompt: true) %>
+    <%= f.label :sponsor_id %><br />
+    <%= f.collection_select(:sponsor_id, User.all, :id, :username, prompt: true) %>
   </div>
 
   <div class="actions">

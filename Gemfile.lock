@@ -99,6 +99,11 @@ GEM
     orm_adapter (0.5.0)
     pg (0.18.4)
     pkg-config (1.1.7)
+    public_activity (1.5.0)
+      actionpack (>= 3.0.0)
+      activerecord (>= 3.0)
+      i18n (>= 0.5.0)
+      railties (>= 3.0.0)
     puma (3.6.0)
     rack (2.0.1)
     rack-test (0.6.3)
@@ -187,6 +192,7 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   pg (~> 0.18)
+  public_activity
   puma (~> 3.0)
   rails (~> 5.0.0)
   rmagick

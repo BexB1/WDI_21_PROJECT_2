@@ -1,0 +1,9 @@
+<li>
+  <small><%= a.created_at.strftime('%H:%M:%S %-d %B %Y') %></small><br/>
+  <strong><%= activity.owner ? activity.owner.username : 'Guest' %></strong>
+  <% if a.trackable %>
+    edited the pledge <%= link_to a.trackable.name, pledge_path(a.trackable) %>.
+  <% else %>
+    edited a pledge that has been deleted.
+  <% end %>
+</li>

@@ -1,4 +1,5 @@
 class PledgesController < ApplicationController
+  before_action :load_activities, only: [:index, :show, :new, :edit]
 
   def index
     @pledges = Pledge.all
@@ -38,7 +39,10 @@ class PledgesController < ApplicationController
   def update
     @pledge = Pledge.find(params[:id])
     @user = current_user
-    if @pledge.update_attributes(pledge_params)
+
+    p pledge_params
+
+    if @pledge.update(pledge_params)
       render 'show'
     else
       render 'edit'
@@ -55,17 +59,29 @@ class PledgesController < ApplicationController
     end
   end
 
-  private
-  def pledge_params
-    params.require(:pledge).permit(:name, :description, :category_id, :amount, :pledge_id)
+  def checkin
+    @pledge = Pledge.find(params[:id])
+
+    @pledge.first_checkin
+
+    if @pledge.is_failed?
+      ## pledge is over!
+      flash[:danger] = "Pledge failed!"
+    else
+      @pledge.update(daily_post: Time.now.utc)
+      flash[:success] = "Checked in!"
+    end
+
+    redirect_to @pledge
   end
 
-  def has_posted?
-    if current_user.posts.present?
-      if current_user.posts.last.updated_at < Time.now - 24.hours
-        @post.save          
-      end
-    end
+  private
+  def pledge_params
+    params.require(:pledge).permit(:name, :description, :category_id, :amount, :sponsor_id)
+  end
+
+  def load_activities
+    @activities = PublicActivity::Activity.order('created_at DESC').limit(10)
   end
 
 end

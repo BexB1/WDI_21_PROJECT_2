@@ -1,18 +1,8 @@
 Rails.application.routes.draw do
 
-  get 'pledges/index'
+  resources :pledges
 
-  get 'pledges/show'
-
-  get 'pledges/new'
-
-  get 'pledges/edit'
-
-  get 'pledges/create', to: "pledges#create"
-
-  get 'pledges/update', to: "pledges#index"
-
-  get 'pledges/destroy'
+  post 'pledges/:id/checkin', to: "pledges#checkin", as: :checkin_pledge
 
   resources :pledges
   get 'categories/show'

@@ -4,7 +4,7 @@
     <thead><%= @pledge.name %></thead>
     <tr>
       <td>Pledger :</td>
-      <td><%= @pledge.user.username %></td>
+      <td><%= @pledge.owner.username %></td>
     </tr>
     <tr>
       <td>Description :</td>
@@ -14,24 +14,29 @@
       <td>Amount Pledged:</td>
       <td><%= @pledge.amount %></td>
     </tr>
+    <tr>
       <td>Pledge Sponsor :</td>
-      <td> <%= @sponsor %></td>
+      <td> <%= @pledge.sponsor.username %></td>
+    </tr>
+    <tr>
+      <td>Daily check:</td>
+      <td> <%= @pledge.daily_post %></td>
     </tr>
   </table>
 
   <br>
 
-  <% if current_user %>
+  <% if current_user.id == @pledge.user_id %>
 
   Have you fulfilled this pledge today?
 
   <br><br>
 
-  <button>Yes!</button>
+
+  <%= link_to "Yes!", checkin_pledge_path(@pledge), method: :post %>
+  <% end %>
 
   <br><br>
-
-  <% end %>
 
 
 
