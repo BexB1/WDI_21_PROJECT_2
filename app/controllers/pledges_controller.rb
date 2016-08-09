@@ -2,22 +2,27 @@ class PledgesController < ApplicationController
 
   def index
     @pledges = Pledge.all
+    @user = current_user
   end
 
   def show
     @pledge = Pledge.find(params[:id])
+    @user = current_user
   end
 
   def new
     @pledge = Pledge.new
+    @user = current_user
   end
 
   def edit
     @pledge = Pledge.find(params[:id])
+    @user = current_user
   end
 
   def create
     @pledge = current_user.pledges.create(pledge_params)
+    @user = current_user
 
     respond_to do |format|
       if @pledge.save
@@ -32,6 +37,7 @@ class PledgesController < ApplicationController
 
   def update
     @pledge = Pledge.find(params[:id])
+    @user = current_user
     if @pledge.update_attributes(pledge_params)
       render 'show'
     else
@@ -40,6 +46,7 @@ class PledgesController < ApplicationController
   end
 
   def destroy
+    @user = current_user
     @pledge = Pledge.find(params[:id])
     @pledge.destroy
     respond_to do |format|
