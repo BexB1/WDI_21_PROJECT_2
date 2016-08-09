@@ -15,7 +15,9 @@
   <nav>
 
     <ul>
+    <% if current_user %>
       <li><%= image_tag @user.profile_picture.thumb.url, class: 'profile_thumb' %></li>
+    <% end %>
       <li><%= link_to "Home", root_path %></li>
       <li><%= link_to "Pledges", pledges_path %></li>
     <% if current_user %>
@@ -27,6 +29,7 @@
       <li><%= link_to "Register",  new_user_registration_path %></li>
     </ul>
     <% end %>
+    
   </nav>
   
     <p class="notice"><%= notice %></p>
@@ -34,9 +37,11 @@
 
 
     <div class="wrapper">
-    
+      <div class="sub-wrapper">
+
       <%= yield %>
 
+      </div>
     </div>
   </body>
 </html>

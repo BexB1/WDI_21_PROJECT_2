@@ -6029,3 +6029,591 @@ Processing by PledgesController#show as HTML
 Completed 200 OK in 42ms (Views: 36.0ms | ActiveRecord: 1.2ms)
 
 
+Started GET "/pledges/1" for ::1 at 2016-08-09 09:16:45 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PledgesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPledge Load (1.2ms)[0m  [1m[34mSELECT  "pledges".* FROM "pledges" WHERE "pledges"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pledges/show.html.erb within layouts/application
+  Rendered pledges/show.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 385ms (Views: 280.5ms | ActiveRecord: 23.5ms)
+
+
+Started GET "/pledges/1" for ::1 at 2016-08-09 09:17:30 +0100
+Processing by PledgesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPledge Load (1.5ms)[0m  [1m[34mSELECT  "pledges".* FROM "pledges" WHERE "pledges"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pledges/show.html.erb within layouts/application
+  Rendered pledges/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 33.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/pledges/1" for ::1 at 2016-08-09 09:17:53 +0100
+Processing by PledgesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPledge Load (0.3ms)[0m  [1m[34mSELECT  "pledges".* FROM "pledges" WHERE "pledges"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pledges/show.html.erb within layouts/application
+  Rendered pledges/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 102ms (Views: 96.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pledges/1" for ::1 at 2016-08-09 09:18:18 +0100
+Processing by PledgesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPledge Load (0.5ms)[0m  [1m[34mSELECT  "pledges".* FROM "pledges" WHERE "pledges"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pledges/show.html.erb within layouts/application
+  Rendered pledges/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 96ms (Views: 90.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pledges/1" for ::1 at 2016-08-09 09:18:33 +0100
+Processing by PledgesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPledge Load (1.3ms)[0m  [1m[34mSELECT  "pledges".* FROM "pledges" WHERE "pledges"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pledges/show.html.erb within layouts/application
+  Rendered pledges/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 52ms (Views: 44.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/pledges/1" for ::1 at 2016-08-09 09:19:38 +0100
+Processing by PledgesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPledge Load (1.4ms)[0m  [1m[34mSELECT  "pledges".* FROM "pledges" WHERE "pledges"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pledges/show.html.erb within layouts/application
+  Rendered pledges/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 65ms (Views: 58.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/pledges/1" for ::1 at 2016-08-09 09:19:55 +0100
+Processing by PledgesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPledge Load (1.7ms)[0m  [1m[34mSELECT  "pledges".* FROM "pledges" WHERE "pledges"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pledges/show.html.erb within layouts/application
+  Rendered pledges/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 63ms (Views: 54.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/pledges/1" for ::1 at 2016-08-09 09:20:44 +0100
+Processing by PledgesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPledge Load (0.3ms)[0m  [1m[34mSELECT  "pledges".* FROM "pledges" WHERE "pledges"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pledges/show.html.erb within layouts/application
+  Rendered pledges/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 32ms (Views: 26.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pledges/1" for ::1 at 2016-08-09 09:21:40 +0100
+Processing by PledgesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPledge Load (0.4ms)[0m  [1m[34mSELECT  "pledges".* FROM "pledges" WHERE "pledges"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pledges/show.html.erb within layouts/application
+  Rendered pledges/show.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for "BexB":String):
+    13:       <td><%= @pledge.amount %></td>
+    14:     </tr>
+    15:       <td>Pledge Sponsor :</td>
+    16:       <td> <%= link_to @pledge.sponsor.id %></td>
+    17:     </tr>
+    18:   </table>
+    19: 
+  
+app/views/pledges/show.html.erb:16:in `_app_views_pledges_show_html_erb___957904131807728188_70178996672940'
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.3ms)
+Started GET "/pledges/1" for ::1 at 2016-08-09 09:21:46 +0100
+Processing by PledgesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPledge Load (0.4ms)[0m  [1m[34mSELECT  "pledges".* FROM "pledges" WHERE "pledges"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pledges/show.html.erb within layouts/application
+  Rendered pledges/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 36ms (Views: 31.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pledges/1" for ::1 at 2016-08-09 09:21:48 +0100
+Processing by PledgesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPledge Load (0.4ms)[0m  [1m[34mSELECT  "pledges".* FROM "pledges" WHERE "pledges"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pledges/show.html.erb within layouts/application
+  Rendered pledges/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 50ms (Views: 43.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pledges/1" for ::1 at 2016-08-09 09:21:51 +0100
+Processing by PledgesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPledge Load (1.9ms)[0m  [1m[34mSELECT  "pledges".* FROM "pledges" WHERE "pledges"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pledges/show.html.erb within layouts/application
+  Rendered pledges/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 76ms (Views: 61.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/pledges/1" for ::1 at 2016-08-09 09:22:02 +0100
+Processing by PledgesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPledge Load (0.4ms)[0m  [1m[34mSELECT  "pledges".* FROM "pledges" WHERE "pledges"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pledges/show.html.erb within layouts/application
+  Rendered pledges/show.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `show' for "BexB":String):
+    13:       <td><%= @pledge.amount %></td>
+    14:     </tr>
+    15:       <td>Pledge Sponsor :</td>
+    16:       <td> <%= link_to @pledge.sponsor.show %></td>
+    17:     </tr>
+    18:   </table>
+    19: 
+  
+app/views/pledges/show.html.erb:16:in `_app_views_pledges_show_html_erb___957904131807728188_70179060089440'
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.9ms)
+Started GET "/pledges/1" for ::1 at 2016-08-09 09:22:10 +0100
+Processing by PledgesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPledge Load (0.4ms)[0m  [1m[34mSELECT  "pledges".* FROM "pledges" WHERE "pledges"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pledges/show.html.erb within layouts/application
+  Rendered pledges/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pledges/1" for ::1 at 2016-08-09 09:23:18 +0100
+Processing by PledgesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPledge Load (0.8ms)[0m  [1m[34mSELECT  "pledges".* FROM "pledges" WHERE "pledges"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pledges/show.html.erb within layouts/application
+  Rendered pledges/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 74ms (Views: 65.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pledges/1" for ::1 at 2016-08-09 09:23:31 +0100
+Processing by PledgesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPledge Load (0.5ms)[0m  [1m[34mSELECT  "pledges".* FROM "pledges" WHERE "pledges"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pledges/show.html.erb within layouts/application
+  Rendered pledges/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 74ms (Views: 67.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:23:38 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (38.8ms)
+Completed 200 OK in 51ms (Views: 41.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pledges" for ::1 at 2016-08-09 09:23:43 +0100
+Processing by PledgesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pledges/index.html.erb within layouts/application
+  [1m[36mPledge Load (0.7ms)[0m  [1m[34mSELECT "pledges".* FROM "pledges"[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pledges/index.html.erb within layouts/application (49.6ms)
+Completed 200 OK in 86ms (Views: 71.9ms | ActiveRecord: 6.7ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-08-09 09:23:49 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kOw/MaGhEtLFtBxJbyVpUtMq9wtt6HMgWnPFSQfpscnBMUWhbzxzYu/JUzSF+LBIcykljYm2sOBPm+f7LJPj8w=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (2.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:23:49 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (26.9ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `profile_picture' for nil:NilClass):
+    14: 
+    15:   <nav>
+    16:     <ul>
+    17:       <li><%= image_tag @user.profile_picture.thumb.url, class: 'profile_thumb' %></li>
+    18:       <li><%= link_to "Home", root_path %></li>
+    19:       <li><%= link_to "Pledges", pledges_path %></li>
+    20:     <% if current_user %>
+  
+app/views/home/index.html.erb:17:in `_app_views_home_index_html_erb__819414819397615930_70178994255080'
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.9ms)
+Started GET "/" for ::1 at 2016-08-09 09:24:42 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (1.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/Bex/development/WDI_21_PROJECT_2/app/views/home/index.html.erb:49: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/Bex/development/WDI_21_PROJECT_2/app/views/home/index.html.erb:51: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/home/index.html.erb:49: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/home/index.html.erb:51: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Bex/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.9ms)
+Started GET "/" for ::1 at 2016-08-09 09:24:56 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (25.7ms)
+Completed 200 OK in 33ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-08-09 09:25:11 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (60.1ms)
+Completed 200 OK in 104ms (Views: 102.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-08-09 09:28:06 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qc4lLYUdn3e3shaPiT1QcKoYpaNVtv+htDQGiz4GbRNu9D0o1CZMZdwKv3RmVA1bJVSBKWWcafpFK3Tire/+0g==", "user"=>{"username"=>"SteveyBoi", "profile_picture"=>#<ActionDispatch::Http::UploadedFile:0x007fa7ada5b9f8 @tempfile=#<Tempfile:/var/folders/7_/pyv8n6d54kxf67kkqq7brntr0000gn/T/RackMultipart20160809-42758-1c8qz7o.jpg>, @original_filename="scumbag-steve.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[profile_picture]\"; filename=\"scumbag-steve.jpg\"\r\nContent-Type: image/jpeg\r\n">, "first_name"=>"Steve", "last_name"=>"the Legend", "email"=>"Stevey@boi.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "stevey@boi.com"], ["LIMIT", 1]]
+  [1m[35mSQL (8.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "first_name", "last_name", "created_at", "updated_at", "email", "encrypted_password", "profile_picture") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["username", "SteveyBoi"], ["first_name", "Steve"], ["last_name", "the Legend"], ["created_at", 2016-08-09 08:28:06 UTC], ["updated_at", 2016-08-09 08:28:06 UTC], ["email", "stevey@boi.com"], ["encrypted_password", "$2a$11$dgGbPiITR4Hz.H9JOUHTA.iRgiW7TjKoB163mrnvIqvxg7fLi2Q52"], ["profile_picture", "scumbag-steve.jpg"]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (7.6ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "sign_in_count" = $2, "current_sign_in_at" = $3, "last_sign_in_at" = $4, "current_sign_in_ip" = $5, "last_sign_in_ip" = $6 WHERE "users"."id" = $7[0m  [["updated_at", 2016-08-09 08:28:07 UTC], ["sign_in_count", 1], ["current_sign_in_at", 2016-08-09 08:28:07 UTC], ["last_sign_in_at", 2016-08-09 08:28:07 UTC], ["current_sign_in_ip", "::1/128"], ["last_sign_in_ip", "::1/128"], ["id", 2]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 308ms (ActiveRecord: 23.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:28:07 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (19.9ms)
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pledges" for ::1 at 2016-08-09 09:28:16 +0100
+Processing by PledgesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pledges/index.html.erb within layouts/application
+  [1m[36mPledge Load (0.9ms)[0m  [1m[34mSELECT "pledges".* FROM "pledges"[0m
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pledges/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 65ms (Views: 56.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/pledges/new" for ::1 at 2016-08-09 09:28:31 +0100
+Processing by PledgesController#new as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pledges/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered pledges/_form.html.erb (17.1ms)
+  Rendered pledges/new.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 73ms (Views: 60.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/pledges/new" for ::1 at 2016-08-09 09:31:21 +0100
+Processing by PledgesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pledges/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered pledges/_form.html.erb (6.6ms)
+  Rendered pledges/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 48ms (Views: 42.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:31:40 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (59.6ms)
+Completed 200 OK in 71ms (Views: 63.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:32:05 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (74.8ms)
+Completed 200 OK in 80ms (Views: 76.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:32:18 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (59.9ms)
+Completed 200 OK in 67ms (Views: 62.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:32:33 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (70.9ms)
+Completed 200 OK in 79ms (Views: 73.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:32:59 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (57.3ms)
+Completed 200 OK in 62ms (Views: 58.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:33:13 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (58.3ms)
+Completed 200 OK in 64ms (Views: 59.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:33:38 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (49.0ms)
+Completed 200 OK in 53ms (Views: 50.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:33:52 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (75.5ms)
+Completed 200 OK in 81ms (Views: 76.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:34:01 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (53.4ms)
+Completed 200 OK in 59ms (Views: 55.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:34:42 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (68.4ms)
+Completed 200 OK in 75ms (Views: 70.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:35:59 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (57.9ms)
+Completed 200 OK in 64ms (Views: 59.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:36:38 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (58.9ms)
+Completed 200 OK in 63ms (Views: 60.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:37:04 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (62.3ms)
+Completed 200 OK in 67ms (Views: 63.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:37:13 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (51.6ms)
+Completed 200 OK in 57ms (Views: 54.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:37:37 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (58.8ms)
+Completed 200 OK in 64ms (Views: 60.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:38:51 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (67.0ms)
+Completed 200 OK in 72ms (Views: 68.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:39:17 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (28.0ms)
+Completed 200 OK in 33ms (Views: 30.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:39:34 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (68.4ms)
+Completed 200 OK in 74ms (Views: 70.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:40:01 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (55.7ms)
+Completed 200 OK in 61ms (Views: 57.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:40:12 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (66.0ms)
+Completed 200 OK in 72ms (Views: 68.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:40:25 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (78.8ms)
+Completed 200 OK in 85ms (Views: 80.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:40:31 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (57.3ms)
+Completed 200 OK in 65ms (Views: 59.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:40:36 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (65.1ms)
+Completed 200 OK in 75ms (Views: 68.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:40:44 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (87.9ms)
+Completed 200 OK in 95ms (Views: 90.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:40:51 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (56.5ms)
+Completed 200 OK in 64ms (Views: 58.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:41:02 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (86.8ms)
+Completed 200 OK in 97ms (Views: 90.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:41:24 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (54.6ms)
+Completed 200 OK in 59ms (Views: 55.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:41:37 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (62.1ms)
+Completed 200 OK in 67ms (Views: 63.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-08-09 09:42:06 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (32.4ms)
+Completed 200 OK in 39ms (Views: 34.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pledges" for ::1 at 2016-08-09 09:42:13 +0100
+Processing by PledgesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pledges/index.html.erb within layouts/application
+  [1m[36mPledge Load (0.5ms)[0m  [1m[34mSELECT "pledges".* FROM "pledges"[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pledges/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 61ms (Views: 52.0ms | ActiveRecord: 2.1ms)
+
+

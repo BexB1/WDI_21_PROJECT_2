@@ -14,11 +14,13 @@
 
   <nav>
     <ul>
-      <li><%= image_tag @user.profile_picture.thumb.url, class: 'profile_thumb' %></li>
+      <% if current_user %>
+        <li><%= image_tag @user.profile_picture.thumb.url, class: 'profile_thumb' %></li>
+        <li><%= current_user.email %></li>
+      <% end %>
       <li><%= link_to "Home", root_path %></li>
       <li><%= link_to "Pledges", pledges_path %></li>
     <% if current_user %>
-      <li><%= current_user.email %></li>
       <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
       <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
     <% else %>

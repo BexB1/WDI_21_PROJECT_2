@@ -1,14 +1,22 @@
 <p id="notice"><%= notice %></p>
 
+<div class="sub-wrapper">
 
-<table>
-  <thead><%= @pledge.name %></thead>
-  <tr>
-    <td>Name : <%= @pledge.name %></td>
-    <td>Description : <%= @pledge.description %></td>
-    <td>Amount Pledged: <%= @pledge.amount %></td>
-    <td>Pledge Sponsor : <%= @pledge.sponsor %></td>
-</tr>
-</table>
+  <table>
+    <thead><%= @pledge.name %></thead>
+    <tr>
+      <td>Description :</td>
+      <td><%= @pledge.description %></td>
+    </tr>
+    <tr>
+      <td>Amount Pledged:</td>
+      <td><%= @pledge.amount %></td>
+    </tr>
+      <td>Pledge Sponsor :</td>
+      <td> <%= @pledge.sponsor %></td>
+    </tr>
+  </table>
 
-<%= link_to "Back", pledges_path %>
+  <%= link_to "Back", pledges_path %>
+
+</div>
