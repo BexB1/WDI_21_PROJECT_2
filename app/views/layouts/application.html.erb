@@ -6,6 +6,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'gritter.js.erb', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300,700" rel="stylesheet">
 
   </head>
@@ -29,11 +30,27 @@
       <li><%= link_to "Register",  new_user_registration_path %></li>
     </ul>
     <% end %>
-    
+
   </nav>
   
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+
+    <!-- Gritter -->
+
+
+    <%= js extend_gritter :position => "bottom_right" %>
+
+    <% if flash[:notice] %>
+
+      <%= js add_gritter(flash[:notice], :image => :success, :nodom_wrap  => true) %>
+
+    <% elsif flash[:error] %>
+
+      <%= js add_gritter(flash[:error], :image => :error, :title => "Error", :nodom_wrap  => true) %>
+
+    <% end %>
+
 
 
     <div class="wrapper">

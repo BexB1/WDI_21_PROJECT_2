@@ -60,4 +60,12 @@ class PledgesController < ApplicationController
     params.require(:pledge).permit(:name, :description, :category_id, :amount, :pledge_id)
   end
 
+  def has_posted?
+    if current_user.posts.present?
+      if current_user.posts.last.updated_at < Time.now - 24.hours
+        @post.save          
+      end
+    end
+  end
+
 end

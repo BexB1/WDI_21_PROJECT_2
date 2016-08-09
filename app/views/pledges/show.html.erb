@@ -1,9 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<div class="sub-wrapper">
-
   <table>
     <thead><%= @pledge.name %></thead>
+    <tr>
+      <td>Pledger :</td>
+      <td><%= @pledge.user.username %></td>
+    </tr>
     <tr>
       <td>Description :</td>
       <td><%= @pledge.description %></td>
@@ -13,10 +15,24 @@
       <td><%= @pledge.amount %></td>
     </tr>
       <td>Pledge Sponsor :</td>
-      <td> <%= @pledge.sponsor %></td>
+      <td> <%= @sponsor %></td>
     </tr>
   </table>
 
-  <%= link_to "Back", pledges_path %>
+  <br>
 
-</div>
+  <% if current_user %>
+
+  Have you fulfilled this pledge today?
+
+  <br><br>
+
+  <button>Yes!</button>
+
+  <br><br>
+
+  <% end %>
+
+
+
+  <%= link_to "Back", pledges_path %>
