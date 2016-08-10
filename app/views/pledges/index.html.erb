@@ -2,29 +2,23 @@
 
 <h2>Pledges</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
     <% @pledges.each do |pledge| %>
-      <tr>
-        <td><%= pledge.category.name %></td>
-        <td><%= pledge.name %></td>
-        <td><%= link_to 'Show', pledge %></td>
 
-        <% if user_signed_in? && (current_user.id == pledge.user_id) %>
-          <td><%= link_to 'Edit', edit_pledge_path(pledge) %></td>
-          <td><%= link_to 'Destroy', pledge, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <div id="pledge-card">
+      <table>
+        <tr>
+          <td><%= pledge.name %></td>
+        </tr>
+        <tr>
+          <td>by <%= pledge.owner.username %></td>
+        </tr>
+        <tr>
+          <td><%= link_to 'Show', pledge %></td>
+        </tr>
+    </table>
+    </div>
+<% end %>
 
-<br>
+<br><br><br>
 
 <%= link_to 'New Pledge', new_pledge_path %>

@@ -1,4 +1,4 @@
-<li>
+<br />
   <small><%= a.created_at.strftime('%H:%M:%S %-d %B %Y') %></small><br/>
   <strong><%= activity.owner ? activity.owner.username : 'Guest' %></strong>
   <% if a.trackable %>
@@ -6,4 +6,3 @@
   <% else %>
     edited a pledge that has been deleted.
   <% end %>
-</li>

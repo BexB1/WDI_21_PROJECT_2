@@ -15,3 +15,21 @@
 //= require turbolinks
 //= require_tree .
 //= require gritter
+
+// jQuery(function($){
+//   $(".menu").hide();
+//   $(".hamburger").click(function() {
+//     $(".menu").slideToggle("slow", function() {
+//     });
+//   });
+// });
+
+$(document).ready(function() {
+
+  $('.menu').hide();
+
+  $('.hamburger').on('click', function() {
+     $('.menu').slideToggle('slow'); 
+  });
+
+});

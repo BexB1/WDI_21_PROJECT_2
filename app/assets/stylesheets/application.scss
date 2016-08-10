@@ -14,7 +14,12 @@
  *= require_self
  *= require gritter
  */
+
+ @import "bourbon";
+
  body {
+  background-image: url('/exercise.jpg');
+  background-size: cover;
   margin: 0 auto;
 
   font-family: 'Oxygen', sans-serif;
@@ -26,72 +31,22 @@
   overflow-x: hidden;
  }
 
- nav {
-  // position: absolute;
-  margin: -35px 0;
-  z-index: 10;
-  width: 100%;
-  height: 60px;
-  background-color: #FF9900;
- }
 
-ul li {
-  height: 100%;
-  max-width: 100%;
-  font-size: 20px;
-  padding: 0 50px;
-  list-style: none;
-  display: inline-block;
-  vertical-align: justify;
-  a {
-    background-color: #FF9900;
-    margin: 0;
-    width: 100px;
-    color: #FFF;
-    text-decoration: none;
-    text-transform: uppercase;
-    :hover {
-    }
-  }
-}
 
-.profile_thumb {
-  background: #FFF;
-  border: #FFF solid 4px;
-  border-radius: 10px;
-}
 
-#side {
-  z-index: 200;
-  position: absolute;
-  background: #5ca2f4;
-  top: 0;
-  left: -300px;
-  width: 350px;
-  height: 100%;
-  transition: all 0.4s, all 0.4s ease;
-}
-
-#side:hover {
-  transform: translate(300px, 0);
-}
-#side:hover ~ #content {
-  transform: translate(180px, 0);
-}
-
-.panel {
-  width: 100%;
-  height: 100%;
-}
 
 .wrapper {
+  background: #fff;
+  height: 90vh;
+  width: 85%;
   max-width: 960px;
   margin: auto;
 }
 
 .sub-wrapper {
-  position: absolute;
+  width: 90%;
   top: 100px;
+  vertical-align: middle;
 }
 
 .centered {
@@ -171,6 +126,16 @@ h2 {
   height: 20px;
 }
 
+// Pledge Index
+
+#pledge-card {
+  float: left;
+  margin: 0.5em;
+  width: 30%;
+  max-width: 30%;
+  background-color: rgba(255,153,0,0.5);
+}
+
 // Pledge show page
 
 table {
@@ -178,3 +143,97 @@ table {
     word-wrap: justify;
   }
 }
+
+// Activity Feed
+
+.activity-feed {
+  width: 75%;
+  padding: 10px 50px;
+  font-size: 14px;
+}
+
+
+// Responsive code
+
+// Menu
+
+header{
+  width:100%; 
+  background: rgba(0,0,0,0.4);
+  height:50px; 
+  line-height:50px;
+}
+
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:0px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.menu {
+  z-index:1000000; 
+  font-weight:bold; 
+  font-size:0.8em; 
+  width:100%; 
+  background: rgba(0,0,0,0.4);
+  position:absolute; 
+  text-align:center;
+}
+
+.menu ul {
+  margin: 0; 
+  padding: 0; 
+  list-style-type: none; 
+  list-style-image: none;
+}
+
+.menu li {
+  display: block;   
+  padding: 15px 0 15px 0; 
+  border-bottom: transparent 1px solid;
+}
+
+.menu li:hover {
+  display: block;    
+  background-color: none;
+  padding: 15px 0 15px 0; 
+}
+
+.menu ul li a { 
+  text-decoration:none; 
+  font-size: 2em; 
+  margin: 0px; 
+  color: #fff;
+}
+
+.menu ul li span {
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 2em;
+}
+
+.menu ul li a:hover {  
+  color: #FF9900;
+  text-decoration: none;
+}
+
+.menu a {
+  text-decoration: none; 
+  color: white;
+}
+
+.menu a:hover {
+  text-decoration: none; 
+  color: white;
+}
+
