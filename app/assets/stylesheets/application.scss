@@ -22,6 +22,8 @@
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  overflow-x: hidden;
  }
 
  nav {
@@ -57,7 +59,29 @@ ul li {
   background: #FFF;
   border: #FFF solid 4px;
   border-radius: 10px;
+}
 
+#side {
+  z-index: 200;
+  position: absolute;
+  background: #5ca2f4;
+  top: 0;
+  left: -300px;
+  width: 350px;
+  height: 100%;
+  transition: all 0.4s, all 0.4s ease;
+}
+
+#side:hover {
+  transform: translate(300px, 0);
+}
+#side:hover ~ #content {
+  transform: translate(180px, 0);
+}
+
+.panel {
+  width: 100%;
+  height: 100%;
 }
 
 .wrapper {

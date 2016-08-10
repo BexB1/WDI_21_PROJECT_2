@@ -80,6 +80,8 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
   database: thirty_wins_production
   username: thirty_wins
   password: <%= ENV['THIRTY_WINS_DATABASE_PASSWORD'] %>
+
