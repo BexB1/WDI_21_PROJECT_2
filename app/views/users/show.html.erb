@@ -1,0 +1,20 @@
+
+<div id="userbox">
+
+  <h2><%= @user.username %></h2>
+
+  <%= image_tag @user.profile_picture.url %>
+
+  <br><br>
+
+  <p>Member Since : <%= @user.created_at %></p><br />
+
+  <% @user.pledges.each do |pledge| %>
+
+  <a href="/pledges/<%= pledge.id %>"><%= pledge.name %></a> <br />
+
+  <% end %>
+
+
+
+</div>

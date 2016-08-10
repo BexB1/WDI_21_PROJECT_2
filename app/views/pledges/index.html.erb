@@ -10,7 +10,7 @@
           <td><%= pledge.name %></td>
         </tr>
         <tr>
-          <td>by <%= pledge.owner.username %></td>
+          <td>by <a href="/user/<%= pledge.user_id %>"><%= pledge.owner.username %></td>
         </tr>
         <tr>
           <td><%= link_to 'Show', pledge %></td>

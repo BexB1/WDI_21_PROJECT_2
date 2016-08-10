@@ -24,12 +24,26 @@
 //   });
 // });
 
-$(document).ready(function() {
+  var ready = function() {
+    $('.menu').hide();
 
-  $('.menu').hide();
+    $("body").css("opacity", 0).animate({ opacity: 1}, 1500);
 
-  $('.hamburger').on('click', function() {
-     $('.menu').slideToggle('slow'); 
-  });
+    $("body a").on('click', function() {
+      $("body").css("opacity", 1).animate({ opacity: 0}, 1500);
+    });
 
-});
+    $('.hamburger').on('click', function() {
+      $('.menu').slideToggle('slow'); 
+    });
+
+  };
+
+  $(document).on('turbolinks:load', ready);
+
+
+// $(document).on('ready', ready);
+// // Rails 5 || Turbolinks 5
+// $(document).on('turbolinks:load', ready);
+
+
