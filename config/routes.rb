@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
   resources :pledges
-  resources :users
 
   post 'pledges/:id/checkin', to: "pledges#checkin", as: :checkin_pledge
 

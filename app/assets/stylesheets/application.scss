@@ -159,7 +159,7 @@ h2 {
   position: absolute;
   z-index: 2;
   left: 50%;
-  top: 40%;
+  top: 50%;
   transform: translate(-50%,-50%);
   max-width: 100%;
   text-align: center;
@@ -176,6 +176,7 @@ h2 {
 }
 
 .centered a {
+  margin: 20px;
   padding: 10px;
   border: #FF9900;
   border-radius: 10px;
@@ -183,7 +184,6 @@ h2 {
   color: #FFF;
   font-weight: 700;
   font-size: 35px;
-  top: 50px;
   text-transform: uppercase;
 }
  
