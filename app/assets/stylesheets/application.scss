@@ -16,11 +16,14 @@
  */
 
  @import "bourbon";
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
 
  body {
   // background-image: url('/bg1.jpg');
   // background-size: cover;
   margin: 0 auto;
+  height: 100%;
 
   font-family: 'Oxygen', sans-serif;
   font-weight: 300;
@@ -46,15 +49,15 @@
 
 header {
     width:100%; 
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.5);
     height:50px; 
     line-height:50px;
+    text-align: center;
   }
 
 header span {
   color: #FFF;
-  font-size: 700;
-  margin: 50px 0;
+  font-weight: 700;
   letter-spacing: 3px;
 }
 
@@ -99,7 +102,7 @@ header span {
 
 .menu li:hover {
   display: block;    
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.7);
   padding: 15px 0 15px 0; 
 }
 
@@ -152,20 +155,20 @@ h2 {
 
 .wrapper {
   background: #fff;
-  height: 80vh;
   width: 85%;
   max-width: 960px;
-  margin: auto;
+  min-height: 100%;
+  margin: 0 auto -200px;
 }
 
 .sub-wrapper {
   width: 95%;
-  margin: 0 auto; 
+  margin: 0 auto - 150px; 
   top: 100px;
-  vertical-align: middle;
 }
 
 // Home Page
+
 .centered {
   position: absolute;
   clear: both;
@@ -200,15 +203,16 @@ h2 {
 }
  
 .centered a:hover {
-    color: #FF9900;
-    background: #FFF;
-  }
+  top: 50px;
+  color: #FF9900;
+  background: #FFF;
+}
 
 .shader {
   position: absolute;
   top: 0px;
   width: 100%;
-  height: 100vh;
+  height: 800px;
   z-index: -10;
   
   position: absolute;
@@ -220,7 +224,8 @@ h2 {
   z-index: -10;
   top: 0px;
   width: 100%;
-  height: 700px;
+  height: 800px;
+  margin: 0;
   background-image: url('/bg1.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -228,44 +233,64 @@ h2 {
   background-size: cover;
 }
 
-.bottomshader {
-  bottom: 0;
-  z-index: 20;
-  position: absolute;
-  width: 100%;
-  height: 60%;
-  background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));
-}
 
 .activity-feed {
-  position: absolute;
-  bottom: 0px;
+  margin-top: 50px;
+  bottom: 100px;
   width: 100%;
   ul li {
-    padding: 10px;
+    padding: 20px;
   }
 }
 
-.footer-container footer {
+.push {
+  height: 100px;
+}
+
+
+.footer-container {
   font-size: 15px;
   background:#333333;
   width: 100%;
   position: absolute;
-  bottom: -50px;
-  height: 150px;
+  bottom: -80px;
+  height: 130px;
   color: white;
   padding: 20px;
   margin: 0 auto;
   a {
-    margin: 0 auto;
+    margin: 10px auto;
     color: #a6a6a6;
   }
 }
+
     
 .footer-container footer a:hover {
   color: #FF9900;
 }
 
+.footer-left {
+  float: left;
+  width: 50%;
+}
+
+.footer-right {
+  float: left;
+  width: 50%;
+  p {
+    margin: 0px;
+  }
+}
+
+.footer-right a {
+  margin: 0px 10px;
+}
+
+.demo_form .email-field {
+  width: 70%;
+  border-radius: 5px;
+  margin: 5px 0px;
+}
 
 
 // Forms
@@ -280,11 +305,15 @@ h2 {
 #pledge-card {
   float: left;
   margin: 0.5em;
+  margin-top: 30px;
   padding: 5px;
   width: 30%;
   max-width: 30%;
   background-color: #FF9900;
   border-radius: 5px;
+  h2 {
+    margin: 0 auto;
+  }
   a {
     color: #FFF;
   }
@@ -299,12 +328,22 @@ h2 {
   text-align: center;
 }
 
+.new-pledge h2 {
+  text-align: center;
+}
+
 .pledgelink {
   color: #FFF;
+  font-size: 20px;
   background: #FF9900;
-  padding: 10px;
+  padding: 10px 35px;
   border-radius: 10px;
 }
+
+.pledgelink:hover {
+  color: #a6a6a6;
+}
+
 
 // Pledge show page
 
@@ -334,8 +373,11 @@ table {
 // Activity Feed
 
 .activity-feed {
+  position: absolute;
+  margin: 0;
+  bottom: 90px;
   width: 75%;
-  padding: 10px 50px;
+  padding: 10px;
   font-size: 14px;
 }
 
@@ -445,3 +487,24 @@ Clearfix
   *zoom: 1;
 }
 
+.icon-twitter:before {
+    content: "\f099";
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    /* sprites.less reset */
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    margin-top: 0;
+}

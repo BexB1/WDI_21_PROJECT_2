@@ -3,6 +3,10 @@
 <div class="sub-wrapper">
   <h2>Pledges</h2>
 
+  <div class="new-pledge">
+    <%= link_to 'New Pledge', new_pledge_path, { :class=>"pledgelink" } %>
+  </div>
+
       <% @pledges.each do |pledge| %>
 
       <div id="pledge-card">
@@ -22,7 +26,3 @@
   </div>
 
 <br><br><br>
-
-<div class="new-pledge">
-  <%= link_to 'New Pledge', new_pledge_path, { :class=>"pledgelink" } %>
-</div>

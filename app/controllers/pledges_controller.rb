@@ -81,7 +81,7 @@ class PledgesController < ApplicationController
   end
 
   def load_activities
-    @activities = PublicActivity::Activity.order('created_at DESC').limit(10)
+    @activities = PublicActivity::Activity.order('created_at DESC').limit(5)
   end
 
 end
