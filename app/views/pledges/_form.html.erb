@@ -1,5 +1,6 @@
   <%= form_for(pledge) do |f| %>
 
+  <div class="form-div">
   <% if pledge.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(pledge.errors.count, "error") %> prohibited this pledge from being saved:</h2>
@@ -15,13 +16,18 @@
   <br><br>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :I_pledge_to %><br />
     <%= f.text_field :name, class: 'inputfield', autofocus: true %>
   </div>
 
+  ... every day for the next 30 days.
+
+  <br />
+  <br />
+
   <div class="field">
     <%= f.label :description %><br />
-    <%= f.text_field :description, class: 'inputfield' %>
+    <%= f.text_field :description, placeholder: "Add some specifics. Remember to keep your pledge SMART!", class: 'inputfield' %>
   </div>
 
   <div class="field">
@@ -30,17 +36,20 @@
   </div>
 
   <div class="field">
-    <%= f.label :amount %><br />
-    <%= f.text_field :amount, class: 'inputfield' %>
+    <%= f.label :sponsor_id %><br />
+    <%= f.collection_select(:sponsor_id, User.where.not(id: current_user.id), :id, :username, prompt: true) %>
   </div>
 
-  <div class="field">
-    <%= f.label :sponsor_id %><br />
-    <%= f.collection_select(:sponsor_id, User.all, :id, :username, prompt: true) %>
-  </div>
+  <h3>By clicking submit, you commit 5 of your coins to this pledge, which you will double if you succeed. If you lose, your sponsor gets your coins.
+
+  You currently have <%= current_user.coins %> coins.</h3>
+
+  <br /><br />
 
   <div class="actions">
     <%= f.submit %>
   </div>
+
+</div>
 <% end %>
 

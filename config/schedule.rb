@@ -17,8 +17,8 @@
 #   runner "AnotherModel.prune_old_records"
 # end
 
-every '0 0 * * *' do
-  runner "Pledge.is_failed?"
-end
+# every 1.minute do
+#   command "bundle exec bin/rails runner 'Pledge.test'"
+# end
 
 # Learn more: http://github.com/javan/whenever

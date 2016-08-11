@@ -1,5 +1,3 @@
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
 
 <div class="sub-wrapper">
   <table>
@@ -13,8 +11,8 @@
       <td><%= @pledge.description %></td>
     </tr>
     <tr>
-      <td>Amount Pledged:</td>
-      <td><%= @pledge.amount %></td>
+      <td>Pledged on :</td>
+      <td> <%= @pledge.created_at %></td>
     </tr>
     <tr>
       <td>Pledge Sponsor :</td>
@@ -44,11 +42,19 @@
 
     <% if current_user.id == @pledge.user_id %>
 
-      You are on track with your pledge!
+      You are on track with your pledge! You have been on track for 
+
+      <% start_time =  @pledge.created_at %>
+      <% end_time   =  Time.now %>
+      <%= distance_of_time_in_words(start_time, end_time)  %>.
 
     <% else %>
 
-      <%= @pledge.owner.username %> is on track with their pledge!
+      <%= @pledge.owner.username %> is on track with their pledge! They've been on track for
+
+      <% start_time =  @pledge.created_at %>
+      <% end_time   =  Time.now %>
+      <%= distance_of_time_in_words(start_time, end_time)  %>.
 
     <% end %>
 

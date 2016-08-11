@@ -19,11 +19,16 @@
  @import "font-awesome-sprockets";
  @import "font-awesome";
 
+html{
+  position: relative;
+  min-height: 100%;
+}
+
  body {
   // background-image: url('/bg1.jpg');
   // background-size: cover;
-  margin: 0 auto;
-  height: 100%;
+  margin: auto;
+  margin-bottom: 156px;
 
   font-family: 'Oxygen', sans-serif;
   font-weight: 300;
@@ -147,7 +152,7 @@ h2 {
   font-weight: 700;
   letter-spacing: 0.1em;
   font-size: 60px;
-  text-align: justify;
+  text-align: center;
   line-height: 80px;
   text-transform: uppercase;
 }
@@ -157,13 +162,12 @@ h2 {
   background: #fff;
   width: 85%;
   max-width: 960px;
-  min-height: 100%;
-  margin: 0 auto -200px;
+  margin: auto;
 }
 
 .sub-wrapper {
   width: 95%;
-  margin: 0 auto - 150px; 
+  margin: auto; 
   top: 100px;
 }
 
@@ -249,21 +253,18 @@ h2 {
 
 
 .footer-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   font-size: 15px;
   background:#333333;
-  width: 100%;
-  position: absolute;
-  bottom: -80px;
-  height: 130px;
   color: white;
-  padding: 20px;
   margin: 0 auto;
   a {
     margin: 10px auto;
     color: #a6a6a6;
   }
 }
-
     
 .footer-container footer a:hover {
   color: #FF9900;
@@ -271,15 +272,38 @@ h2 {
 
 .footer-left {
   float: left;
-  width: 50%;
+  vertical-align: middle;
+  width: 35%;
 }
 
 .footer-right {
-  float: left;
-  width: 50%;
+  float: right;
+  vertical-align: middle;
+  width: 65%;
   p {
     margin: 0px;
   }
+}
+
+.footer-right-right {
+  float: right;
+  vertical-align: center;
+  width: 55%;
+}
+
+
+.footer-right-left {
+  vertical-align: top;
+  float: left;
+  width: 45%;
+}
+
+// Activity Feed
+
+.footer-container footer .footer-left .activity-feed {
+  float: left;
+  margin: 0;
+  font-size: 14px;
 }
 
 .footer-right a {
@@ -292,18 +316,47 @@ h2 {
   margin: 5px 0px;
 }
 
+.render-activities {
+  width: 100%;
+}
+
 
 // Forms
+.field input {
+  width: 75%;
+  margin: 5px;
+}
+.field i {
+  margin: 5px;
+}
 
 .inputfield {
   width: 75%;
   height: 20px;
 }
 
+.form-div {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.form-div h3 {
+  max-width: 80%;
+}
+
 // Pledge Index
 
+.sub-wrapper h2 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.sub-wrapper .pledgesheader {
+  width: 35%;
+}
+
 #pledge-card {
-  float: left;
+  display: inline-block;
   margin: 0.5em;
   margin-top: 30px;
   padding: 5px;
@@ -326,22 +379,29 @@ h2 {
   top: 100px;
   clear: both;
   text-align: center;
+  padding: 10px;
+  width: 100%;
 }
 
 .new-pledge h2 {
+  width: 100%;
   text-align: center;
 }
 
-.pledgelink {
-  color: #FFF;
+.new-pledge .pledgelink {
+  width: 100%;
+  text-align: center;
+  color: #FF9900;
   font-size: 20px;
-  background: #FF9900;
-  padding: 10px 35px;
+  padding: 10px 55px;
+  border: 5px solid #FF9900;
   border-radius: 10px;
+  margin: 15px;
 }
 
 .pledgelink:hover {
-  color: #a6a6a6;
+  color: #FFF;
+  background: #FF9900;
 }
 
 
@@ -358,27 +418,23 @@ table {
 
 // User Show Page
 
-#userbox {
-  max-width: 80%;
-  margin: 0 auto; 
-  img {
-    left: 50%;
-  }
-  h2 {
-    left: 50%;
-  }
+.profile-wrapper {
+  max-width: 90%;
+  text-align: center;
 }
 
+.field file_field {
+  margin: 0 auto;
+}
 
-// Activity Feed
+.profile-wrapper img {
+  width: 20%;
+  margin: 0 auto;
+}
 
-.activity-feed {
-  position: absolute;
-  margin: 0;
-  bottom: 90px;
-  width: 75%;
-  padding: 10px;
-  font-size: 14px;
+.profile-wrapper h2 {
+  text-align: center;
+  margin: 0 auto;
 }
 
 
@@ -386,7 +442,7 @@ table {
 
 // Menu
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 960px) {
 
   header {
     width:100%; 
@@ -466,6 +522,19 @@ table {
   .menu a:hover {
     text-decoration: none; 
     color: white;
+  }
+
+  #pledge-card {
+    display: block;
+    min-width: 100%;
+  }
+
+  .centered h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 50px;
   }
 }
 

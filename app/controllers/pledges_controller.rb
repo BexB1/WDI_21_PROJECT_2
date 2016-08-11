@@ -25,9 +25,22 @@ class PledgesController < ApplicationController
     @pledge = current_user.pledges.create(pledge_params)
     @user = current_user
 
+    @owner = @pledge.owner
+    @sponsor = @pledge.sponsor
+
+    if @owner.coins > 5
+      flash[:success] = "Pledge created! Good luck!"
+      @owner.coins -= 5
+      @owner.save
+    else
+      flash[:danger] = "You don't have enough coins to make a new pledge!"
+      redirect_to pledges_path
+    end
+
+
     respond_to do |format|
       if @pledge.save
-        format.html { redirect_to @pledge, notice: 'pledge was successfully created.' }
+        format.html { redirect_to pledges_path, notice: 'pledge was successfully created.' }
         format.json { render :show, status: :created, location: @pledge }
       else
         format.html { render :new }
@@ -60,16 +73,28 @@ class PledgesController < ApplicationController
   end
 
   def checkin
+
     @pledge = Pledge.find(params[:id])
+
+    @owner = @pledge.owner
+    @sponsor = @pledge.sponsor
 
     @pledge.first_checkin
 
     if @pledge.is_failed?
       ## pledge is over!
       flash[:danger] = "Pledge failed!"
+      @sponsor.coins += 5
+      @sponsor.save
     else
       @pledge.update(daily_post: Time.now.utc)
       flash[:success] = "Checked in!"
+    end
+
+    if @pledge.days_won == 30
+      flash[:success] = "Congratulations, you have completed your pledge!"
+      @owner.coins += 10
+      @owner.save
     end
 
     redirect_to @pledge

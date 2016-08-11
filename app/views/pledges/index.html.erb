@@ -1,7 +1,6 @@
-<p id="notice"><%= notice %></p>
 
 <div class="sub-wrapper">
-  <h2>Pledges</h2>
+  <h2 class="pledgesheader">Pledges</h2>
 
   <div class="new-pledge">
     <%= link_to 'New Pledge', new_pledge_path, { :class=>"pledgelink" } %>
@@ -9,7 +8,7 @@
 
       <% @pledges.each do |pledge| %>
 
-      <div id="pledge-card">
+      <div id="pledge-card" class="<% if pledge.is_closed? %> closed<% end %>">
         <table>
           <tr>
             <td><%= pledge.name %></td>
