@@ -40,7 +40,7 @@
 
   <% else %>
 
-    <% if current_user.id == @pledge.user_id %>
+    <% if !current_user.nil? && current_user.id == @pledge.user_id %>
 
       You are on track with your pledge! You have been on track for 
 
