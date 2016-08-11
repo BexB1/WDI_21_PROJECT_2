@@ -1,24 +1,28 @@
 <p id="notice"><%= notice %></p>
 
-<h2>Pledges</h2>
+<div class="sub-wrapper">
+  <h2>Pledges</h2>
 
-    <% @pledges.each do |pledge| %>
+      <% @pledges.each do |pledge| %>
 
-    <div id="pledge-card">
-      <table>
-        <tr>
-          <td><%= pledge.name %></td>
-        </tr>
-        <tr>
-          <td>by <a href="/user/<%= pledge.user_id %>"><%= pledge.owner.username %></td>
-        </tr>
-        <tr>
-          <td><%= link_to 'Show', pledge %></td>
-        </tr>
-    </table>
-    </div>
-<% end %>
+      <div id="pledge-card">
+        <table>
+          <tr>
+            <td><%= pledge.name %></td>
+          </tr>
+          <tr>
+            <td>by <a href="/user/<%= pledge.user_id %>"><%= pledge.owner.username %></a></td>
+          </tr>
+          <tr>
+            <td><%= link_to 'Show', pledge %></td>
+          </tr>
+      </table>
+      </div>
+  <% end %>
+  </div>
 
 <br><br><br>
 
-<%= link_to 'New Pledge', new_pledge_path %>
+<div class="new-pledge">
+  <%= link_to 'New Pledge', new_pledge_path, { :class=>"pledgelink" } %>
+</div>

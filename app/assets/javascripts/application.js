@@ -27,10 +27,10 @@
   var ready = function() {
     $('.menu').hide();
 
-    $("body").css("opacity", 0).animate({ opacity: 1}, 1500);
+    $("body").css("opacity", 0).animate({ opacity: 1}, 1000);
 
     $("body a").on('click', function() {
-      $("body").css("opacity", 1).animate({ opacity: 0}, 1500);
+      $("body").css("opacity", 1).animate({ opacity: 0}, 1000);
     });
 
     $('.hamburger').on('click', function() {

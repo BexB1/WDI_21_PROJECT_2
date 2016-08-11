@@ -1,7 +1,8 @@
-<p id="notice"><%= notice %></p>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 
   <table>
-    <thead><%= @pledge.name %></thead>
+    <thead><h2><%= @pledge.name %></h2></thead>
     <tr>
       <td>Pledger :</td>
       <td><%= @pledge.owner.username %></td>
@@ -24,7 +25,33 @@
     </tr>
   </table>
 
-  <br>
+  <br><br>
+
+  <% if @pledge.is_failed? %>
+
+    <% if current_user.id == @pledge.user_id %>
+
+      You derailed on your pledge. :( Better luck next time!
+
+    <% else %>
+
+    <%= @pledge.owner.username %> derailed on this pledge. :( Better luck next time!
+
+    <% end %>
+
+  <% else %>
+
+    <% if current_user.id == @pledge.user_id %>
+
+      You are on track with your pledge!
+
+    <% else %>
+
+      <%= @pledge.owner.username %> is on track with their pledge!
+
+    <% end %>
+
+  <br><br>
 
   <% if current_user.id == @pledge.user_id %>
 
@@ -34,9 +61,13 @@
 
 
   <%= link_to "Yes!", checkin_pledge_path(@pledge), method: :post %>
+  
+  <br><br>
 
-  <%= link_to 'Edit', edit_pledge_path(@pledge) %> <br>
-  <%= link_to 'Destroy', @pledge, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <%= link_to 'Edit Pledge', edit_pledge_path(@pledge) %> <br>
+  <%= link_to 'Delete Pledge', @pledge, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <% end %>
+
   <% end %>
 
   <br><br>
