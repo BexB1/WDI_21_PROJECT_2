@@ -28,7 +28,7 @@
 
   <% if @pledge.is_failed? %>
 
-    <% if current_user.id == @pledge.user_id %>
+    <% if !current_user.nil? && current_user.id == @pledge.user_id %>
 
       You derailed on your pledge. :( Better luck next time!
 
@@ -60,7 +60,7 @@
 
   <br><br>
 
-  <% if current_user.id == @pledge.user_id %>
+  <% if !current_user.nil? && current_user.id == @pledge.user_id %>
 
   Have you fulfilled this pledge today?
 
