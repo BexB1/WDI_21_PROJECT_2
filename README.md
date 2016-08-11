@@ -12,6 +12,10 @@ Click 'clone or download' and either download the repository as a .zip file, or 
 
 `git clone git@github.com:BexB1/WDI_21_PROJECT_2.git`
 
+Alternatively, access the app on heroku at
+
+`https://thirtywins.herokuapp.com/`
+
 
 
 ### TECH USED ###
