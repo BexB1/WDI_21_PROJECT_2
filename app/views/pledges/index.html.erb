@@ -2,9 +2,13 @@
 <div class="sub-wrapper">
   <h2 class="pledgesheader">Pledges</h2>
 
+  <% if !current_user.nil? %>
+
   <div class="new-pledge">
     <%= link_to 'New Pledge', new_pledge_path, { :class=>"pledgelink" } %>
   </div>
+
+  <% end %>
 
       <% @pledges.each do |pledge| %>
 
