@@ -12,10 +12,6 @@ Click 'clone or download' and either download the repository as a .zip file, or 
 
 `git clone git@github.com:BexB1/WDI_21_PROJECT_2.git`
 
-Alternatively, access the app on heroku at
-
-`https://thirtywins.herokuapp.com/`
-
 
 
 ### TECH USED ###
@@ -47,6 +43,12 @@ First, I began with the wireframes. I made these using Balsamiq.
 ![](http://i13.photobucket.com/albums/a296/BexB/Screen%20Shot%202016-08-11%20at%2020.06.17.png)
 
 I kept the design simple so that the layout would be simple to customise for mobile devices, and the layout would remain much the same across mobile and desktop devices.
+
+Then, before I started any coding, I planned out the model associations.
+
+![](http://i13.photobucket.com/albums/a296/BexB/Screen%20Shot%202016-08-12%20at%2008.55.38.png)
+
+Ultimately I eneded up not adding the comments model, but this was still a useful exercise in plotting out how the other models would relate to each other.
 
 ### Bugs
 

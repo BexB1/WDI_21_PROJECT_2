@@ -1,5 +1,6 @@
 class PledgesController < ApplicationController
   before_action :load_activities, only: [:index, :show, :new, :edit]
+  before_filter :authenticate_user!, only: [:new]
 
   def index
     @pledges = Pledge.all
