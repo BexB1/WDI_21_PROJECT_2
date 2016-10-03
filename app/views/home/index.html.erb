@@ -22,7 +22,7 @@
   <div class="menu">
     <ul>
     <% if current_user %>
-      <li><%= image_tag @user.profile_picture.thumb.url, class: 'profile_thumb' %>  <span><%= current_user.email %></span></li>
+      <li><span><%= current_user.email %></span></li>
     <% end %>
       <li><%= link_to "Home", root_path %></li>
       <li><%= link_to "Pledges", pledges_path %></li>
