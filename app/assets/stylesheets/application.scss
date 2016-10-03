@@ -413,6 +413,15 @@ i {
 
 // Pledge show page
 
+.pledge-show {
+  display: flex;
+  flex-direction: column;
+}
+
+.pledge-show div {
+  margin: 1em;
+}
+
 table {
   h2 {
     font-size: 15px;
@@ -487,10 +496,21 @@ table {
 
   .top-image {
     background-image: url('/bg3.jpg');
-    // -webkit-background-size: cover;
-    // -moz-background-size: cover;
-    // -o-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
   }
  
+}
+
+@media (max-width: 350px) {
+
+  .wrapper {
+    width: 95%;
+  }
+  
+  .sub-wrapper {
+    width: 100%;
+  }
 }

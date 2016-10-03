@@ -1,5 +1,9 @@
 
 <div class="sub-wrapper">
+
+  <div class="pledge-show">
+
+  <div>
   <table>
     <thead><h2><%= @pledge.name %></h2></thead>
     <tr>
@@ -23,8 +27,10 @@
       <td> <%= @pledge.daily_post %></td>
     </tr>
   </table>
+</div>
 
-  <br><br>
+
+<div>
 
   <% if @pledge.is_failed? %>
 
@@ -82,5 +88,9 @@
 
 
   <%= link_to "Back", pledges_path %>
+
+  </div>
+
+    </div>
 
   </div>
