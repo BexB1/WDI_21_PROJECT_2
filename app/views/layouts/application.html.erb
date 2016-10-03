@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>ThirtyWins</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -13,7 +16,7 @@
   <body>
 
   <header>
-    <span> ThirtyWins : Goals, Game-ified. </span><button class="hamburger">&#9776;</button>
+    <span id="slogan"> ThirtyWins : Goals, Game-ified. </span><button class="hamburger">&#9776;</button>
   </header>
 
   <div class="menu">
@@ -60,47 +63,6 @@
         <div class="activity-feed">
           <%= render 'shared/activities' %>
         </div>
-      </div>
-
-      <!-- Footer right divs -->
-
-      <div class="footer-right">
-
-        <div class="footer-right-right"
-
-          <p>Join our mailing list:</p>
-
-          <form action="demo_form" class="demo_form">
-            <input type="text" name="email" placeholder="email" class="email-field"><br>
-            <input type="submit" value="Subscribe" disabled>
-          </form>
-
-          <br />
-
-          <a title="Follow us on Twitter" href="#" target="_blank">
-            <i class="fa fa-twitter fa-3x"></i>
-          </a>
-
-          <a title="Find us on Facebook" href="#" target="_blank">
-          <i class="fa fa-facebook fa-3x"></i>
-          </a>
-
-          <a title="Follow us on Instagram" href="#" target="_blank">
-          <i class="fa fa-instagram fa-3x"></i>
-          </a>
-
-        </div>
-
-        <div class="footer-right-left">
-          <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Terms and Conditions</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Chanse's sound page.</a></li>
-          </ul>
-        </div>
-
       </div>
 
       </footer>

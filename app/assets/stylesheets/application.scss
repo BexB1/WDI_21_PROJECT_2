@@ -15,6 +15,10 @@
  *= require gritter
  */
 
+ @viewport {
+   width: device-width;
+ }
+
  @import "bourbon";
  @import "font-awesome-sprockets";
  @import "font-awesome";
@@ -24,46 +28,45 @@ html{
   min-height: 100%;
 }
 
- body {
-  // background-image: url('/bg1.jpg');
-  // background-size: cover;
+body {
   margin: auto;
-  margin-bottom: 156px;
+  font-size: 1em;
 
   font-family: 'Oxygen', sans-serif;
   font-weight: 300;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
-  overflow-x: hidden;
- }
-
- a {
+a {
   text-decoration: none;
   color: #a6a6a6;
-  letter-spacing: 2px;
- }
+  letter-spacing: 0.1em;
+}
 
- a:hover {
+a:hover {
   color: #FF9900;
- }
+}
 
 
 // Header
 
 header {
-    width:100%; 
-    background: rgba(0,0,0,0.5);
-    height:50px; 
-    line-height:50px;
-    text-align: center;
-  }
+  width:100%; 
+  background: rgba(0,0,0,0.7);
+  height: 3em; 
+  line-height: 1.2em;
+  text-align: center;
+}
 
 header span {
   color: #FFF;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 0.5em;
+  line-height: 2em;
 }
 
 .hamburger{
@@ -71,11 +74,11 @@ header span {
   position:absolute;
   top:0;
   right:0;
-  line-height:45px;
-  padding:0px 15px 0px 15px;
+  // line-height:3em;
+  padding:0px 1em;
   color:#fff;
   border:0;
-  font-size:1.4em;
+  font-size:2em;
   font-weight:bold;
   cursor:pointer;
   outline:none;
@@ -101,14 +104,14 @@ header span {
 
 .menu li {
   display: block;   
-  padding: 15px 0 15px 0; 
+  padding: 1em 0; 
   border-bottom: transparent 1px solid;
 }
 
 .menu li:hover {
   display: block;    
   background: rgba(0,0,0,0.7);
-  padding: 15px 0 15px 0; 
+  padding: 1em 0; 
 }
 
 .menu ul li a { 
@@ -143,17 +146,17 @@ header span {
 h1 {
   font-weight: 700;
   letter-spacing: 0.1em;
-  font-size: 90px;
-  line-height: 80px;
+  font-size: 8em;
+  // line-height: 3em;
   text-transform: uppercase;
 }
 
 h2 {
   font-weight: 700;
   letter-spacing: 0.1em;
-  font-size: 60px;
+  font-size: 2em;
   text-align: center;
-  line-height: 80px;
+  // line-height: 2em;
   text-transform: uppercase;
 }
 
@@ -161,14 +164,12 @@ h2 {
 .wrapper {
   background: #fff;
   width: 85%;
-  max-width: 960px;
+  max-width: 80%;
   margin: auto;
 }
 
 .sub-wrapper {
-  width: 95%;
-  margin: auto; 
-  top: 100px;
+  justify-content: center;
 }
 
 // Home Page
@@ -183,8 +184,8 @@ h2 {
   max-width: 100%;
   text-align: center;
   h1 {
-    font-size: 150px;
-    letter-spacing: 5px;
+    font-size: 6em;
+    letter-spacing: 0.2em;
     color: #FFF;
   }
 }
@@ -195,14 +196,14 @@ h2 {
 }
 
 .centered a {
-  margin: 20px;
-  padding: 10px 20px;
+  margin: 1.5em;
+  padding: 0.5em 1em;
   border: #FF9900;
   border-radius: 10px;
   background-color: rgba(255,153,0,1);
   color: #FFF;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 1.5em;
   text-transform: uppercase;
 }
  
@@ -228,13 +229,14 @@ h2 {
   z-index: -10;
   top: 0px;
   width: 100%;
-  height: 800px;
+  height: 100%;
   margin: 0;
   background-image: url('/bg1.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
 }
 
 
@@ -243,7 +245,7 @@ h2 {
   bottom: 100px;
   width: 100%;
   ul li {
-    padding: 20px;
+    padding: 0.1em;
   }
 }
 
@@ -256,12 +258,13 @@ h2 {
   position: absolute;
   bottom: 0;
   width: 100%;
-  font-size: 15px;
+  height: 15%;
+  font-size: 1.2em;
   background:#333333;
   color: white;
   margin: 0 auto;
   a {
-    margin: 10px auto;
+    margin: 0.1em auto;
     color: #a6a6a6;
   }
 }
@@ -270,11 +273,16 @@ h2 {
   color: #FF9900;
 }
 
-.footer-left {
-  float: left;
-  vertical-align: middle;
-  width: 35%;
+.footer-left ul li {
+  display: inline;
+  margin-right: 0.2em;
 }
+
+// .footer-left {
+//   float: left;
+//   vertical-align: middle;
+//   width: 35%;
+// }
 
 .footer-right {
   float: right;
@@ -298,6 +306,10 @@ h2 {
   width: 45%;
 }
 
+i {
+  font-size: 1em;
+}
+
 // Activity Feed
 
 .footer-container footer .footer-left .activity-feed {
@@ -310,12 +322,6 @@ h2 {
   margin: 0px 10px;
 }
 
-.demo_form .email-field {
-  width: 70%;
-  border-radius: 5px;
-  margin: 5px 0px;
-}
-
 .render-activities {
   width: 100%;
 }
@@ -324,7 +330,7 @@ h2 {
 // Forms
 .field input {
   width: 75%;
-  margin: 5px;
+  margin: 0.1em;
 }
 .field i {
   margin: 5px;
@@ -332,7 +338,8 @@ h2 {
 
 .inputfield {
   width: 75%;
-  height: 20px;
+  height: 1em;
+  border: 1px solid black;
 }
 
 .form-div {
@@ -342,26 +349,29 @@ h2 {
 
 .form-div h3 {
   max-width: 80%;
+  font-size: 1.2em;
 }
 
 // Pledge Index
+
+.sub-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
 .sub-wrapper h2 {
   text-align: center;
   margin: 0 auto;
 }
 
-.sub-wrapper .pledgesheader {
-  width: 35%;
-}
-
 #pledge-card {
-  display: inline-block;
-  margin: 0.5em;
-  margin-top: 30px;
   padding: 5px;
+  margin: 0.2em;
   width: 30%;
-  max-width: 30%;
   background-color: #FF9900;
   border-radius: 5px;
   h2 {
@@ -376,8 +386,6 @@ h2 {
 }
 
 .new-pledge {
-  top: 100px;
-  clear: both;
   text-align: center;
   padding: 10px;
   width: 100%;
@@ -392,11 +400,9 @@ h2 {
   width: 100%;
   text-align: center;
   color: #FF9900;
-  font-size: 20px;
-  padding: 10px 55px;
+  font-size: 1.8em;
   border: 5px solid #FF9900;
   border-radius: 10px;
-  margin: 15px;
 }
 
 .pledgelink:hover {
@@ -437,143 +443,54 @@ table {
   margin: 0 auto;
 }
 
-
 // Responsive code
 
 // Menu
 
-@media only screen and (max-width: 960px) {
+@media (max-width: 700px) {
 
-  header {
-    width:100%; 
-    background: rgba(0,0,0,0.4);
-    height:50px; 
-    line-height:50px;
-  }
-
-  .hamburger{
-    background:none;
-    position:absolute;
-    top:0;
-    right:0;
-    line-height:45px;
-    padding:0px 15px 0px 15px;
-    color:#fff;
-    border:0;
-    font-size:1.4em;
-    font-weight:bold;
-    cursor:pointer;
-    outline:none;
-    z-index:10000000000000;
-  }
-
-  .menu {
-    z-index:1000000; 
-    font-weight:bold; 
-    font-size:0.8em; 
-    width:100%; 
-    background: rgba(0,0,0,0.4);
-    position:absolute; 
-    text-align:center;
-  }
-
-  .menu ul {
-    margin: 0; 
-    padding: 0; 
-    list-style-type: none; 
-    list-style-image: none;
-  }
-
-  .menu li {
-    display: block;   
-    padding: 15px 0 15px 0; 
-    border-bottom: transparent 1px solid;
-  }
-
-  .menu li:hover {
-    display: block;    
-    background-color: none;
-    padding: 15px 0 15px 0; 
-  }
-
-  .menu ul li a { 
-    text-decoration:none; 
-    font-size: 2em; 
-    margin: 0px; 
-    color: #fff;
-  }
-
-  .menu ul li span {
-    text-transform: uppercase;
-    color: #FFF;
+  h1 {
     font-size: 2em;
   }
 
-  .menu ul li a:hover {  
-    color: #FF9900;
-    text-decoration: none;
+  .top-image {
+    background-image: url('/bg2.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+ 
+}
+
+@media (max-width: 550px) {
+
+  .slogan {
+    display: none;
   }
 
-  .menu a {
-    text-decoration: none; 
-    color: white;
+  .menu {
+    font-size: 0.6em;
+    letter-spacing: 0.05em;
   }
 
-  .menu a:hover {
-    text-decoration: none; 
-    color: white;
+  .sub-wrapper {
+    align-content: stretch;
+    flex-direction: column;
   }
 
   #pledge-card {
-    display: block;
+    font-size: 1.5em;
     min-width: 100%;
+    flex-grow: 2;
   }
 
-  .centered h1 {
-    font-size: 60px;
+  .top-image {
+    background-image: url('/bg3.jpg');
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    background-size: cover
   }
-
-  h2 {
-    font-size: 50px;
-  }
-}
-
-/*************************
-Clearfix
-*************************/
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-.clearfix {
-  *zoom: 1;
-}
-
-.icon-twitter:before {
-    content: "\f099";
-}
-
-[class^="icon-"], [class*=" icon-"] {
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    text-decoration: inherit;
-    -webkit-font-smoothing: antialiased;
-    /* sprites.less reset */
-    display: inline;
-    width: auto;
-    height: auto;
-    line-height: normal;
-    vertical-align: baseline;
-    background-image: none;
-    background-position: 0% 0%;
-    background-repeat: repeat;
-    margin-top: 0;
+ 
 }
